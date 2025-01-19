@@ -203,6 +203,7 @@ print(str(now)[0:-7])
 #result=pyfiglet.figlet_format("Demiana Younes")
 #print(result)
 
+########################################################Task Session1 ########################################################
 #Task1
 x=[4,4,6,7,4,4,2]
 Count_of_Four=x.count(4)
@@ -219,19 +220,17 @@ for i in range(len(Letter)):
     else:
         print(f"{Letter[i]} is not vowel") 
     
-    #Task3
-    import os
-
-    def access_environment_variables():
-        # Access the 'OS' environment variable
-        os_env=os.environ.get("OS","Not Defined")
-        print(f"OS: {os_env}")
-        # Access the 'PATH' environment variable
-        path_env=os.environ.get("PATH","Not Defined")
-        print(f"PATH: {path_env}")
-
-    if __name__=="__main__":
-        access_environment_variables()
+#Task3
+import os
+def access_environment_variables():
+    # Access the 'OS' environment variable
+    os_env=os.environ.get("OS","Not Defined")
+    print(f"OS: {os_env}")
+    # Access the 'PATH' environment variable
+    path_env=os.environ.get("PATH","Not Defined")
+    print(f"PATH: {path_env}")
+if __name__=="__main__":
+    access_environment_variables()
 
 #Task4
 import calendar
@@ -256,7 +255,7 @@ if __name__=="__main__":
     except ValueError:
         print("Invalid input! Please enter numeric values for year and month.")
 
-#Task4
+#Task5
 import math
 
 def Calculate_circle_area(radius):
