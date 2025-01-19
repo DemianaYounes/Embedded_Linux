@@ -271,3 +271,24 @@ if __name__=="__main__":
             print(f"The area of the circle with radius {radius} is: {area:.2f}")
     except ValueError:
         print("Invalid input! Please enter a numeric value for the radius.")
+
+
+
+#Task6
+from gtts import gTTS
+import vlc
+
+# Convert text to speech
+myobj = gTTS(text="Good Morning Jojo", lang='en', slow=True)
+
+# Saving the converted audio in a .mp3 file
+myobj.save("Welcome.mp3")
+
+# Playing the converted file
+p = vlc.MediaPlayer("./Welcome.mp3")
+p.play()
+
+# Allow the audio to play for a certain duration before closing the program
+while True :
+    pass 
+
